@@ -1,0 +1,19 @@
+{% include header.html %}
+
+<!-- article -->
+<article class="box post post-excerpt">
+  <header>
+    <h2><a>{{ page.title }}</a></h2>
+    {% if page.subtitle %}<p>{{ page.subtitle }}</p>{% endif %}
+  </header>
+
+    {% if page.splashimg %}
+    <a class="image featured"><img src="/images/{{ page.splashimg }}" alt="{{ page.splashalt }}" /></a>
+    {% endif %}
+	
+{{ content }}
+
+</article>
+
+{% include sidebar.html %}
+{% include footer.html %}

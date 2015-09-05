@@ -1,0 +1,44 @@
+<!-- Pagination -->
+
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  <a href="{% if paginator.page == 2 %}/{%else%}{{ paginator.previous_page_path}}{%endif%}" class="button previous">Previous Page</a>
+
+  <div class="pages">
+  {% if paginator.page > 3 %}
+  <a href="/">1</a>
+  <span>&hellip;</span>
+  {% endif %}
+
+    {% assign first_page = paginator.page | minus:2 %}
+    {% if first_page < 1 %}{% assign first_page = 1 %}{% endif %}
+    {% assign last_page = paginator.page | plus:2 %}
+    {% if last_page > paginator.total_pages %}{% assign last_page = paginator.total_pages %}{% endif %}
+    
+    {% for count in (first_page..last_page) %}
+      {% if count == 1 %}
+        {% if paginator.page == count %}
+    <a href="/" class="active">{{ count }}</a>
+        {% else %}
+    <a href="/">{{ count }}</a>
+        {% endif %}
+      {% else %}
+      
+        {% assign prefix = "/blog/page" %}
+        {% if paginator.page == count %}
+    <a href="{{ prefix }}{{ count }}" class="active">{{ count }}</a>
+        {% else %}
+    <a href="{{ prefix }}{{ count }}">{{ count }}</a>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+  {% if last_page < paginator.total_pages %}
+  <span>&hellip;</span>
+  <a href="/blog/page{{ paginator.total_pages }}">{{ paginator.total_pages }}</a>
+  {% endif %}
+
+  </div>
+  <a href="{{ paginator.next_page_path}}" class="button next">Next Page</a>
+</div>
+{% endif %}

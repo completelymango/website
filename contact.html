@@ -1,0 +1,30 @@
+---
+title: Contact
+layout: article
+---
+
+<article class="box post">
+<div class="container">
+  <p>Thanks for stopping by! Please feel free to leave me a message here, and I'll get back to you soon.</p>
+
+  <form action="http://formspree.io/contact@completelymango.com" method="POST">
+    <input type="hidden" name="_subject" value="Contact Me from completelymango.com" />
+    <input type="hidden" name="_next" value="/thanks.html" />
+    <input type="text" name="_gotcha" style="display:none" />
+    <div class="row 50%">
+      <div class="6u"><input type="text" name="_replyto" placeholder="Name" /></div>
+      <div class="6u"><input type="email" name="email" placeholder="Email" /></div>
+    </div>
+    <div class="row 50%">
+      <div class="12u">
+        <textarea name="message" placeholder="Message"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="12u">
+        <input type="submit" value="Send Message" />
+      </div>
+    </div>
+  </form>
+</div>
+</article>
