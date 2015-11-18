@@ -1,75 +1,69 @@
-</div>
-</div>
 <!-- Sidebar -->
-<div id="sidebar">
-  <!-- Logo -->
-  <h1 id="logo"><a href="/">Mango</a></h1>	
-  <!-- Nav -->
-  <nav id="nav">
-    <ul>
-      <li {% if {{page.path}} == 'index.html' %}class="current"{% endif %}><a href="/">Home</a></li>
-      <li {% if {{page.path}} contains 'about' %}class="current"{% endif %}><a href="/about.html">About</a></li>
-      <li {% if {{page.path}} contains 'projects' %}class="current"{% endif %}><a href="/projects.html">Projects</a></li>
-      <li {% if {{page.path}} contains 'contact' %}class="current"{% endif %}><a href="/contact.html">Contact</a></li>
-    </ul>
-  </nav>
-  
-  <!-- Search -->
-<!--
-  <section class="box search">
-    <form action="/search" method="get">
-      <input type="text" id="search-query" name="search" placeholder="Search" autocomplete="off">
-    </form>
+      <section id="sidebar">
+      
+      <!-- Intro -->
+        <section id="intro">
+          <a href="#" class="logo"><img src="images/logo.jpg" alt="" /></a>
+          <header>
+            <h2>Completely Mango</h2>
+            <p>Subtext goes here</p>
+          </header>
+        </section>
 
-    <form method="post" action="#">
-      <input type="text" class="text" name="search" placeholder="Search" />
-    </form>
-  </section>
+        <!-- Mini Posts -->
+        <section>
+          <div class="mini-posts">
+            {% for post in paginator.posts %}
+            <!-- Mini Post -->
+            <article class="mini-post">
+              <header>
+                <h3><a href="#">{{ post.title }}</a></h3>
+                <time class="published" datetime="{{ post.date | date: "%y-%m-%d" }}">{{ post.date | date: "%B %d, %Y" }}</time>
+                <a href="#" class="author"><img src="images/avatar.jpg" alt="" /></a>
+              </header>
+              <a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+            </article>
+            {% endfor %}
+          </div>
+        </section>
 
-<section id="search-results" style="display: none;">
-  <p>Search results</p>
-  <div class="entries">
-  </div>
+        <!-- Posts List -->
+        <section>
+          <ul class="posts">
+            {% for post in paginator.posts %}
+            <li>
+              <article>
+                <header>
+                  <h3><a href="#">Lorem ipsum fermentum ut nisl vitae</a></h3>
+                  <time class="published" datetime="{{ post.date | date: "%y-%m-%d" }}">{{ post.date | date: "%B %d, %Y" }}</time>
+                </header>
+                <a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+              </article>
+            </li>
+            {% endfor %}
+          </ul>
+        </section>
+
+        <!-- About -->
+        <section class="blurb">
+          <h2>About</h2>
+          <p>Hellooooooo. I'm Jerry, and this is where I plan on writing about the various projects I do in my free time. Right now it's pretty sparse, but hopefully in time it'll have lots more information. Thanks for stopping by.</p>
+          <ul class="actions">
+            <li><a href="#" class="button">Learn More</a></li>
+          </ul>
+        </section>
+
+        <!-- Footer -->
+        <section id="footer">
+          <ul class="icons">
+            <li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="#" class="fa-rss"><span class="label">RSS</span></a></li>
+            <li><a href="#" class="fa-envelope"><span class="label">Email</span></a></li>
+          </ul>
+          <p class="copyright">&copy; Completely Mango. Design: <a href="http://html5up.net">HTML5 UP</a>..</p>
+        </section>
+
 </section>
--->  
-
-  <!-- Text -->
-  <section class="box text-style1">
-    <div class="inner">
-      <p>
-        A profound bit of text will go here
-      </p>
-    </div>
-  </section>
-  
-  <!-- Recent Posts -->
-  <section class="box recent-posts">
-    <header>
-      <h2>Recent Posts</h2>
-    </header>
-    <ul>
-      {% for post in site.posts limit: 5 %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-      {% endfor %}
-    </ul>
-  </section>
-					
-  <!-- Recent Comments -->
-  <!--
-  <section class="box recent-comments">
-    <header>
-      <h2>Recent Comments</h2>
-    </header>
-    <ul>
-      <li>case on <a href="#">Lorem ipsum dolor</a></li>
-      <li>molly on <a href="#">Sed dolore magna</a></li>
-      <li>case on <a href="#">Sed dolore magna</a></li>
-    </ul>
-  </section>
-  -->
-
-  <!-- Calendar -->
-  <section class="box calendar">
-    <div id="myCalendar" class="inner">
-    </div>
-  </section>	
+</div>

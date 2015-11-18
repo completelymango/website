@@ -3,42 +3,35 @@ title: CompletelyMango
 layout: home
 ---
 
-<!--
-  Note: Set the body element's class to "left-sidebar" to position the sidebar on the left.
-  Set it to "right-sidebar" to, you guessed it, position it on the right.
--->
+    <!-- Main -->
+    <div id="main">
 
+    <!-- Post -->
+    {% for post in paginator.posts %}
+    <article class="post">
+      <header>
+        <div class="title">
+          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+          <p>{{ post.subtitle }}</p>
+        </div>
+        <div class="meta">
+          <time class="published" datetime="{{ post.date | date: "%y-%m-%d" }}">{{ post.date | date: "%B %d, %Y" }}</time>
+          <a href="#" class="author"><span class="name">Jerry</span><img src="images/avatar.jpg" alt="" /></a>
+        </div>
+      </header>
 
-        {% for post in paginator.posts %}
-        <article class="box post post-excerpt">
-          <header>
-            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-            <p>{{ post.subtitle }}</p>
-          </header>
-          
-          <div class="info">
-            <span class="date">
-              <span class="month">{{ post.date | date: "%b" }}</span>
-              <span class="day">{{ post.date | date: "%d" }}</span>
-              <span class="year">, {{ post.date | date: "%Y" }}</span>
-            </span>
-            
-            <ul class="stats">
+      <a href="#" class="image featured"><img src="images/{{ post.splashimg }}" alt="" /></a>
+      <p>{{ post.excerpt }}</p>
 
-<li><a>{% capture readtime %}{{ post.content | number_of_words | plus:91 | divided_by:180.0 | append:'.' | split:'.' | first }}{% endcapture %}  {% if readtime == '0' %} &lt; 1{% else %}{{ readtime }}{% endif %} min</a></li>
-<!--
-              <li><a href="#" class="icon fa-comment">0</a></li>
-              <li><a href="#" class="icon fa-heart">0</a></li>
-              <li><a href="#" class="icon fa-twitter">0</a></li>
-              <li><a href="#" class="icon fa-facebook">0</a></li>
--->
-            </ul>
-          </div>
-          
-          {% if post.splashimg %}
-          <a href="{{ post.url }}" class="image featured"><img src="/images/{{ post.splashimg }}" alt="{{ post.splashalt }}" /></a>
-          {% endif %}
-          {{ post.excerpt }}
-          [<a href="{{ post.url }}">read more</a>]
-        </article>
-        {% endfor %}
+      <footer>
+        <ul class="actions">
+          <li><a href="#" class="button big">Continue Reading</a></li>
+        </ul>
+        <ul class="stats">
+          <li><a href="#">General</a></li>
+          <li><a href="#" class="icon fa-heart">28</a></li>
+          <li><a href="#" class="icon fa-comment">128</a></li>
+        </ul>
+      </footer>
+    </article>
+    {% endfor %}
