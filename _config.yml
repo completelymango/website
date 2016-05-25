@@ -1,4 +1,4 @@
-name: "Cyberrnetic Jello and stuff"
+name: "House"
 description: " "
 #url: "www.cyberrneticjello.com"
 url: "http://localhost:4000"
@@ -7,14 +7,13 @@ destination: ../jcecil.github.io
 paginate: 3
 paginate_path: "/blog/page:num/"
 
-markdown: rdiscount
+#markdown: rdiscount
 excerpt_separator: <!--more-->
 
 permalink: /blog/:month-:day-:year/:title.html
 
 highlighter: true
 
-gems: ['jekyll-lunr-js-search']
 
 category-list: [steambox, mediacenter, javascript, website]
 tag-list: [steambox, mediacenter, javascript, website]
