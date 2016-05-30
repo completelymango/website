@@ -1,3 +1,5 @@
+gems: [jekyll-paginate]
+
 name: "House"
 description: " "
 #url: "www.cyberrneticjello.com"
@@ -13,7 +15,6 @@ excerpt_separator: <!--more-->
 permalink: /blog/:month-:day-:year/:title.html
 
 highlighter: true
-
 
 category-list: [steambox, mediacenter, javascript, website]
 tag-list: [steambox, mediacenter, javascript, website]
