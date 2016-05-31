@@ -12,11 +12,11 @@ layout: home
 				<p>{{ post.subtitle }}</p>
 			</div>
 			<div class="meta">
-				<time class="published" datetime="2015-11-01">{{ post.date }}</time>
-				<a href="#" class="author"><span class="name">Jane Doe</span><img src="images/avatar.jpg" alt="" /></a>
+				<time class="published" datetime="{{ post.date }}">{{ post.date | date: '%B %d, %Y' }}</time>
+				<a href="#" class="author"><span class="name">Jerry</span><img src="images/avatar.jpg" alt="" /></a>
 			</div>
 		</header>
-		<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+		<a href="#" class="image featured"><img src="images/{{ post.splashimg }}" alt="{{ post.splashalt }}" /></a>
 		<p>{{ post.excerpt }}</p>
 		<footer>
 			<ul class="actions">
