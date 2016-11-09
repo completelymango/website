@@ -1,28 +1,4 @@
 ---
-title: jcecil
+title: blog
 layout: blog
 ---
-
-{% for post in paginator.posts %}
-
-							<!-- Banner -->
-								<section id="banner">
-									<div class="content">
-										<header>
-											<h1>{{ post.title }}</h1>
-											<p>{{ post.subtitle }}</p>
-										</header>
-										<p>{{ post.excerpt }}</p>
-										<ul class="actions">
-											<li><a href="{{ post.url }}" class="button big">Read more</a></li>
-										</ul>
-									</div>
-									<span class="image object">
-										<img src="/images/{{ post.splashimg }}" alt="{{ post.splashalt }}" />
-									</span>
-								</section>
-                                                         <hr />
-
-{% endfor %}
-						</div>
-					</div>
