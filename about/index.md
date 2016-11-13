@@ -20,8 +20,8 @@ Feel free to send me an email here:
 <input type="hidden" name="_next" value="/about/thanks.html" />
 <input type="text" name="_gotcha" style="display:none" />
 <div class="row 50%">
-<div class="6u"><input type="text" name="_replyto" placeholder="Name" /></div>
-<div class="6u"><input type="email" name="email" placeholder="Email" /></div>
+<div class="6u"><input type="text" name="name" placeholder="Name" /></div>
+<div class="6u"><input type="email" name="_replyto" placeholder="Email" /></div>
 </div>
 <div class="row 50%">
 <div class="12u">
