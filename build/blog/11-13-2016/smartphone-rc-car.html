@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Smartphone Rc Car</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
+	</head>
+
+
+
+
+<body>
+	<!-- Content -->
+	<div id="content">
+		<div class="inner">
+
+			<p>I don’t have much to show for it <em>yet</em>, but I have an RC car and a raspberry pi laying around, so I’m going to hook them together. I’m not exactly sure what the nd goal will be. It would be cool to be able to control the car using my smartphone, or perhaps even allow it to drive around autonomously. For starters though I’d like to get the raspberry pi in control of the RC car, and I’ll go from there.</p>
+
+<!--more-->
+
+<p><img src="/images/traxxasBeginning.jpg" alt="Traxass car" /></p>
+
+<p>It’s not a new idea. <a href="http://www.instructables.com/id/Raspberry-Pi-Smartphone-Controlled-Rc-Car/">Instructables</a> actually has step-by-step instructions for connecting it to a smartphone, which is pretty awesome. I don’t have a multimeter at home so I’m going to bring my car into work this week and measure the servo signals.</p>
+
+<p>I do plan on extending the idea. I have a raspberry pi compatible camera attatched, so I’m thinking of sending the video feed back to my smartphone in real time (I’m not sure what the latency will be over wifi or bluetooth). Then I could use physical orientation changes as signals to turn left / right, and have the full screen display be the video feed. I also have a GPS module if I want to go fully autonomous, but that’s a super long-term goal.</p>
+
+<p><img src="/images/traxxasCamera.jpg" alt="Camera module haphazardly taped to the top of the RC car shell" /></p>
+
+<p>One problem I can already see is that he RC car I have does not last very long on a battery charge. It will be hard to iteratively debug things if I have to recharge the battery every half hour, but we’ll cross that bridge when we get there</p>
+
+
+		</div>
+	</div>
+	<!-- Sidebar -->
+<div id="sidebar">
+
+	<!-- Logo -->
+	<h1 id="logo"><a href="/">jcecil</a></h1>
+
+	<!-- Nav -->
+	<nav id="nav">
+		<ul>
+
+			<li ><a href="/">Home</a></li>
+			<li ><a href="/about/">About</a></li>
+			<li ><a href="/projects/">Projects</a></li>
+		</ul>
+	</nav>
+
+	<!-- Search -->
+	<section class="box search">
+		<form method="post" action="#">
+			<input type="text" class="text" name="search" placeholder="Search" />
+		</form>
+	</section>
+
+	<!-- Text -->
+	<section class="box text-style1">
+		<div id="quotes" class="inner">
+		</div>
+	</section>
+
+	<!-- Recent Posts -->
+	<!--section class="box recent-posts">
+	 <header>
+	 <h2>Recent Posts</h2>
+	 </header>
+	 <ul>
+	 <li><a href="#">Lorem ipsum dolor</a></li>
+	 <li><a href="#">Feugiat nisl aliquam</a></li>
+	 <li><a href="#">Sed dolore magna</a></li>
+	 <li><a href="#">Malesuada commodo</a></li>
+	 <li><a href="#">Ipsum metus nullam</a></li>
+	 </ul>
+	 </section-->
+
+	 <!-- Recent Comments -->
+	 <!--section class="box recent-comments">
+	  <header>
+	  <h2>Recent Comments</h2>
+	  </header>
+	  <ul>
+	  <li>case on <a href="#">Lorem ipsum dolor</a></li>
+	  <li>molly on <a href="#">Sed dolore magna</a></li>
+	  <li>case on <a href="#">Sed dolore magna</a></li>
+	  </ul>
+	  </section-->
+
+	  <!-- Calendar -->
+	  <section class="box calendar">
+		  <div id="myCalendar" class="inner">
+		  </div>
+	  </section>
+
+	  <!-- Copyright -->
+	  <ul id="copyright">
+		  <li>&copy; jcecil 2016.</li>
+	  </ul>
+
+</div>
+
+<!-- Scripts -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/skel.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="/assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/calendar.js"></script>
+<script src="/assets/js/quotes.js"></script>
+
+</body>
+</html>
+

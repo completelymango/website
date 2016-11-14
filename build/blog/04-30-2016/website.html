@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Website</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
+	</head>
+
+
+
+
+<body>
+	<!-- Content -->
+	<div id="content">
+		<div class="inner">
+
+			<p>I’ve made lots of changes recently, so I figured I’d list them all out in a post here. This will be a good bookmark for me if I ever have to start from scratch in the future, or help me compare / contrast other options.</p>
+
+<!--more-->
+
+<h3 id="website-design">Website Design</h3>
+
+<p><a href="http://html5up.net/">html5up</a> is a great site for static website templates. The designer does an excellent job creating templates that fit any situation and work on any display size. Best of all they are totally free (under a CCA license), and still gives me the freedom to mess around with the layout / javascript, etc.</p>
+
+<h3 id="color-selection">Color Selection</h3>
+
+<p><span class="image featured">
+<img src="/images/metro.png" alt="Metro color palette" />
+</span></p>
+
+<p>I will learn how to customize my site more a I continue playing around with things, but I need a color scheme regardless of which layout I use. I stumbled across <a href="http://www.colourlovers.com/">colourlovers</a>, which seems like a really cool site for finding colors that work well together. Some of the palettes even have example websites that use them to help you get a good idea of how the final product will look. Right now I’m rocking <a href="http://www.colourlovers.com/palette/1/metro">metro</a>.</p>
+
+<h3 id="static-page-generation">Static Page Generation</h3>
+
+<p>I’m hosting my site on <a href="https://pages.github.com/">github pages</a>, and one of the tutorials on that site points users to use <a href="http://jekyllrb.com/">jekyll</a> for personal blogs. I don’t have any experience with other website creation tools, but jekyll has been able to do everything I’ve needed so far.</p>
+
+<h3 id="email-me">Email Me</h3>
+
+<p>This site most likely won’t be very large, but I still want to have a way for visitors to contact me. I found a quick and easy way to do this on <a href="http://sebastien.saunier.me/blog/2014/04/15/you-do-not-need-a-database-for-your-contact-form.html">another blog</a>. <a href="http://formspree.io/">formspree</a> is a free service setup by a group of developers entirely on their own time. It’s completely free up to 1000 messages a month, and for me it works like a charm. I hadn’t heard about <a href="https://assembly.com/discover">assembly</a> before finding this blog, but I love the idea of solving a problem and sharing the results with the community.</p>
+
+<h3 id="javascript">Javascript</h3>
+
+<p>I didn’t have much exposure to javascript in school. You can have js code embedded in html, but the general practice is to have js methods defined in a separate file and operate on the html page <em>after</em> it has been contructed. I found that kind of strange, and it didn’t help that I’m unfamiliar with good javascript debugging techniques. I managed to make the calendar in the sidebar using js, and I plan on working with it a lot more on this site; some of the examples on <a href="http://threejs.org/examples/#webgl_lines_colors">threejs</a> are really exciting.</p>
+
+<h3 id="misc">Misc</h3>
+
+<p><a href="http://pixelcog.com/">pixelcog</a> is a neat static website that also uses jekyll behind-the-scenes. I think it looks clean, it’s fast, works for all sorts of different screen sizes, and includes a bunch of neat little tricks. One <a href="http://pixelcog.com/blog/2013/jekyll-from-scratch-extending-jekyll/#other-jekyll-tips-and-tricks">example</a> lets you estimate how long an article is. It also shows how to incorporate a commenting system, site analytics and other features that I didn’t even know were possible in a static website.</p>
+
+<p>Hmmmm, I guess that about covers it for now.</p>
+
+
+		</div>
+	</div>
+	<!-- Sidebar -->
+<div id="sidebar">
+
+	<!-- Logo -->
+	<h1 id="logo"><a href="/">jcecil</a></h1>
+
+	<!-- Nav -->
+	<nav id="nav">
+		<ul>
+
+			<li ><a href="/">Home</a></li>
+			<li ><a href="/about/">About</a></li>
+			<li ><a href="/projects/">Projects</a></li>
+		</ul>
+	</nav>
+
+	<!-- Search -->
+	<section class="box search">
+		<form method="post" action="#">
+			<input type="text" class="text" name="search" placeholder="Search" />
+		</form>
+	</section>
+
+	<!-- Text -->
+	<section class="box text-style1">
+		<div id="quotes" class="inner">
+		</div>
+	</section>
+
+	<!-- Recent Posts -->
+	<!--section class="box recent-posts">
+	 <header>
+	 <h2>Recent Posts</h2>
+	 </header>
+	 <ul>
+	 <li><a href="#">Lorem ipsum dolor</a></li>
+	 <li><a href="#">Feugiat nisl aliquam</a></li>
+	 <li><a href="#">Sed dolore magna</a></li>
+	 <li><a href="#">Malesuada commodo</a></li>
+	 <li><a href="#">Ipsum metus nullam</a></li>
+	 </ul>
+	 </section-->
+
+	 <!-- Recent Comments -->
+	 <!--section class="box recent-comments">
+	  <header>
+	  <h2>Recent Comments</h2>
+	  </header>
+	  <ul>
+	  <li>case on <a href="#">Lorem ipsum dolor</a></li>
+	  <li>molly on <a href="#">Sed dolore magna</a></li>
+	  <li>case on <a href="#">Sed dolore magna</a></li>
+	  </ul>
+	  </section-->
+
+	  <!-- Calendar -->
+	  <section class="box calendar">
+		  <div id="myCalendar" class="inner">
+		  </div>
+	  </section>
+
+	  <!-- Copyright -->
+	  <ul id="copyright">
+		  <li>&copy; jcecil 2016.</li>
+	  </ul>
+
+</div>
+
+<!-- Scripts -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/skel.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="/assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/calendar.js"></script>
+<script src="/assets/js/quotes.js"></script>
+
+</body>
+</html>
+
