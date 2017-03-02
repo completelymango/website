@@ -1,12 +1,14 @@
 {% include header.html %}
 
-<body>
-	<!-- Content -->
-	<div id="content">
-		<div class="inner">
+<!-- Main -->
+<div id="main">
+	{{ content }}
+</div>
 
-			{{ content }}
+{% include sidebar.html %}
 
-		</div>
-	</div>
-	{% include footer.html %}
+</section>
+</div> 
+
+
+{% include footer.html %}
