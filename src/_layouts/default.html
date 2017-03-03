@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <title>blog</title>
+    <title>{{ page.title }}</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -86,99 +86,7 @@
 
       <!-- Main -->
       <div id="main">
-        
-<!-- Post -->
-<article class="post">
-  <header>
-    <div class="title">
-      <h2><a href="/blog/11-13-2016/smartphone-rc-car.html">Smartphone Rc Car</a></h2>
-      <p>Because why not</p>
-    </div>
-    <div class="meta">
-      <time class="published" datetime="2016-11-13 00:00:00 -0800">2016-11-13 00:00:00 -0800</time>
-      <a href="#" class="author"><span class="name">Jane Doe</span><img src="/images/mango.png" alt="" /></a>
-    </div>
-  </header>
-  <a href="/blog/11-13-2016/smartphone-rc-car.html" class="image featured"><img src="/images/traxxasBeginning.jpg" alt="RC Car all put together, except for the whole raspberry pi part" /></a>
-  <p>I don’t have much to show for it <em>yet</em>, but I have an RC car and a raspberry pi laying around, so I’m going to hook them together. I’m not exactly sure what the nd goal will be. It would be cool to be able to control the car using my smartphone, or perhaps even allow it to drive around autonomously. For starters though I’d like to get the raspberry pi in control of the RC car, and I’ll go from there.</p>
-
-
-  <footer>
-    <ul class="actions">
-      <li><a href="/blog/11-13-2016/smartphone-rc-car.html" class="button big">Continue Reading</a></li>
-    </ul>
-    <ul class="stats">
-      <li><a href="#">General</a></li>
-      <li><a href="#" class="icon fa-heart">28</a></li>
-      <li><a href="#" class="icon fa-comment">128</a></li>
-    </ul>
-  </footer>
-</article>
-
-<!-- Post -->
-<article class="post">
-  <header>
-    <div class="title">
-      <h2><a href="/blog/11-12-2016/website-take-two.html">Website Take Two</a></h2>
-      <p>Once more, with gusto</p>
-    </div>
-    <div class="meta">
-      <time class="published" datetime="2016-11-12 00:00:00 -0800">2016-11-12 00:00:00 -0800</time>
-      <a href="#" class="author"><span class="name">Jane Doe</span><img src="/images/mango.png" alt="" /></a>
-    </div>
-  </header>
-  <a href="/blog/11-12-2016/website-take-two.html" class="image featured"><img src="/images/" alt="" /></a>
-  <p>This will be my last website rewrite. I’ve restarted way too many times, so I’m going to stick with this template for the forseeable future.</p>
-
-<p>Example post with no splashimg</p>
-
-  <footer>
-    <ul class="actions">
-      <li><a href="/blog/11-12-2016/website-take-two.html" class="button big">Continue Reading</a></li>
-    </ul>
-    <ul class="stats">
-      <li><a href="#">General</a></li>
-      <li><a href="#" class="icon fa-heart">28</a></li>
-      <li><a href="#" class="icon fa-comment">128</a></li>
-    </ul>
-  </footer>
-</article>
-
-<!-- Post -->
-<article class="post">
-  <header>
-    <div class="title">
-      <h2><a href="/blog/04-30-2016/website.html">Website</a></h2>
-      <p>Under Construction</p>
-    </div>
-    <div class="meta">
-      <time class="published" datetime="2016-04-30 00:00:00 -0700">2016-04-30 00:00:00 -0700</time>
-      <a href="#" class="author"><span class="name">Jane Doe</span><img src="/images/mango.png" alt="" /></a>
-    </div>
-  </header>
-  <a href="/blog/04-30-2016/website.html" class="image featured"><img src="/images/metro.png" alt="metro palette from colourlovers.com" /></a>
-  <p>I’ve made lots of changes recently, so I figured I’d list them all out in a post here. This will be a good bookmark for me if I ever have to start from scratch in the future, or help me compare / contrast other options.</p>
-
-
-  <footer>
-    <ul class="actions">
-      <li><a href="/blog/04-30-2016/website.html" class="button big">Continue Reading</a></li>
-    </ul>
-    <ul class="stats">
-      <li><a href="#">General</a></li>
-      <li><a href="#" class="icon fa-heart">28</a></li>
-      <li><a href="#" class="icon fa-comment">128</a></li>
-    </ul>
-  </footer>
-</article>
-
-
-
-<ul class="actions pagination">
-  <li><a href="" class="disabled button big previous">Previous Page</a></li>
-  <li><a href="#" class="button big next">Next Page</a></li>
-</ul>
-
+        {{ content }}
       </div>
 
       <!-- Sidebar -->

@@ -1,6 +1,6 @@
 ---
 subtitle: Because why not
-layout: post
+layout: default
 categories: [projects]
 tags: [raspi,rccar]
 splashimg: traxxasBeginning.jpg
