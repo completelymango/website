@@ -1,0 +1,33 @@
+---
+title: blog post categories
+layout: default
+---
+
+{% for cat in site.category-list %}
+<h2> {{ cat }} <h2/>
+    <section>
+      <ul class="posts">
+
+        {% for post in site.posts %}
+        {% for pc in post.categories %}
+        {% if pc == cat %}
+
+        <!-- Posts List -->
+        <li>
+          <article>
+            <header>
+              <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+              <time class="published" datetime="{{ post.date }}">{{ post.date }}</time>
+            </header>
+            <a href="#" class="image"><img src="{{ post.splashimg }}" alt="" /></a>
+          </article>
+        </li>
+        {% endif %}   <!-- cat-match-p -->
+        {% endfor %}  <!-- page-category -->
+        {% endfor %}  <!-- page -->
+      </ul>
+    </section>
+
+    {% endfor %}  <!-- cat -->
+
+

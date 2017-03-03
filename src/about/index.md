@@ -1,6 +1,6 @@
 ---
 title: about
-layout: basic
+layout: default
 ---
 
 

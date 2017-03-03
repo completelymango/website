@@ -1,6 +1,6 @@
 ---
 subtitle: Once more, with gusto
-layout: basic
+layout: default
 categories: [projects]
 tags: [website]
 ---

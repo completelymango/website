@@ -1,9 +1,8 @@
 ---
 subtitle: Because why not
 layout: default
-categories: [projects]
-tags: [raspi,rccar]
-splashimg: traxxasBeginning.jpg
+categories: [projects, raspi, rccar]
+splashimg: /images/traxxasBeginning.jpg
 splashalt: RC Car all put together, except for the whole raspberry pi part
 ---
 

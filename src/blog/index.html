@@ -16,13 +16,23 @@ layout: default
       <a href="#" class="author"><span class="name">Jane Doe</span><img src="/images/mango.png" alt="" /></a>
     </div>
   </header>
-  <a href="{{ post.url }}" class="image featured"><img src="/images/{{ post.splashimg }}" alt="{{ post.splashalt }}" /></a>
+  {% if post.splashimg != nil %}
+  <a href="{{ post.url }}" class="image featured"><img src="{{ post.splashimg }}" alt="{{ post.splashalt }}" /></a>
+  {% endif %}
   {{ post.excerpt }}
   <footer>
     <ul class="actions">
-      <li><a href="{{ post.url }}" class="button big">Continue Reading</a></li>
+      <li><a href="{{ post.url }}" class="button big">more</a></li>
     </ul>
     <ul class="stats">
+      <li>
+        {% for category in post.categories %}
+        <a href="#">{{ category }}</a>
+        {% if forloop.last == false %}
+        ,
+        {% endif %}
+        {% endfor %}
+      </li>
       <li><a href="#">General</a></li>
       <li><a href="#" class="icon fa-heart">28</a></li>
       <li><a href="#" class="icon fa-comment">128</a></li>
