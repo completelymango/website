@@ -4,82 +4,94 @@
 @import 'libs/skel';
 
 /*
-	Future Imperfect by HTML5 UP
+	Striped by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-$palette-border: #dedede;
+	form {
+		input[type="text"],
+		input[type="email"],
+		input[type="password"],
+		select,
+		textarea {
+			position: relative;
+			box-shadow: none !important;
+			-ms-behavior: url('assets/js/ie/PIE.htc');
+		}
+	}
 
-/* Button */
-
+	input[type="button"],
 	input[type="submit"],
 	input[type="reset"],
-	input[type="button"],
 	button,
 	.button {
-		border: solid 1px $palette-border;
+		position: relative;
+		box-shadow: none !important;
+		-ms-behavior: url('assets/js/ie/PIE.htc');
 	}
 
-/* Form */
-
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	input[type="tel"],
-	select,
-	textarea {
-		border: solid 1px $palette-border;
-	}
-
-/* Post */
-
-	.post {
-		border: solid 1px $palette-border;
-
-		> header {
-			border-bottom: solid 1px $palette-border;
+	.pagination {
+		.pages {
+			a {
+				position: relative;
+				box-shadow: none !important;
+				-ms-behavior: url('assets/js/ie/PIE.htc');
+			}
 		}
 	}
 
-/* Mini Post */
-
-	.mini-post {
-		border: solid 1px $palette-border;
-	}
-
-/* Header */
-
-	#header {
-		border-bottom: solid 1px $palette-border;
-
-		.links {
-			border-left: solid 1px $palette-border;
+	.box {
+		&.calendar {
+			td {
+				a, span {
+					position: relative;
+					box-shadow: none !important;
+					-ms-behavior: url('assets/js/ie/PIE.htc');
+				}
+			}
 		}
 
-		.main {
-			ul {
-				li {
-					border-left: solid 1px $palette-border;
+		&.text-style1 {
+			.inner {
+				position: relative;
+				box-shadow: none !important;
+				-ms-behavior: url('assets/js/ie/PIE.htc');
+			}
+		}
+	}
+
+	#nav {
+		li {
+			a {
+				position: relative;
+				box-shadow: none !important;
+				-ms-behavior: url('assets/js/ie/PIE.htc');
+			}
+		}
+	}
+
+	.box {
+		&.post {
+			.info {
+				box-shadow: none !important;
+				-ms-behavior: url('assets/js/ie/PIE.htc');
+
+				.stats {
+					li {
+						a {
+							position: relative;
+							box-shadow: none !important;
+							-ms-behavior: url('assets/js/ie/PIE.htc');
+						}
+					}
 				}
 			}
 		}
 	}
 
-/* Sidebar */
-
-	#sidebar {
-		> * {
-			border-top: solid 1px $palette-border;
-		}
-	}
-
-/* Menu */
-
-	#menu {
-		border-left: solid 1px $palette-border;
-
-		> * {
-			border-top: solid 1px $palette-border;
-		}
+	#logo {
+		position: relative;
+		box-shadow: none !important;
+		-ms-behavior: url('assets/js/ie/PIE.htc');
 	}

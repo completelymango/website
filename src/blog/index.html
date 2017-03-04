@@ -4,45 +4,46 @@ layout: default
 ---
 
 {% for post in site.posts %}
+
 <!-- Post -->
-<article class="post">
+<article class="box post post-excerpt">
   <header>
-    <div class="title">
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      <p>{{ post.subtitle }}</p>
-    </div>
-    <div class="meta">
-      <time class="published" datetime="{{ post.date }}">{{ post.date }}</time>
-      <a href="#" class="author"><span class="name">Jane Doe</span><img src="/images/mango.png" alt="" /></a>
-    </div>
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <p>{{ post.subtitle }}</p>
   </header>
+  <div class="info">
+    {% assign month = post.date | date: "%b" %}
+    <span class="date"><span class="month">{{ month }}<span>{{ post.date | date: "%B" | slice: 3, 19 }}</span></span> <span class="day">{{ post.date | date:"%d" }}</span><span class="year">{{ post.date | date:", %Y" }}</span></span>
+    <ul class="stats">
+
+      <li><a>{% capture readtime %}{{ post.content | number_of_words | plus:91 | divided_by:180.0 | append:'.' | split:'.' | first }}{% endcapture %} {% if readtime == '0' %} &lt; 1{% else %}{{ readtime }}{% endif %} min</a></li>
+
+      {% for category in post.categories %}
+      <li>
+        <a href="#">{{ category }}</a>
+      </li>
+      {% endfor %}
+
+    </ul>
+  </div>
   {% if post.splashimg != nil %}
   <a href="{{ post.url }}" class="image featured"><img src="{{ post.splashimg }}" alt="{{ post.splashalt }}" /></a>
   {% endif %}
   {{ post.excerpt }}
-  <footer>
-    <ul class="actions">
-      <li><a href="{{ post.url }}" class="button big">more</a></li>
-    </ul>
-    <ul class="stats">
-      <li>
-        {% for category in post.categories %}
-        <a href="#">{{ category }}</a>
-        {% if forloop.last == false %}
-        ,
-        {% endif %}
-        {% endfor %}
-      </li>
-      <li><a href="#">General</a></li>
-      <li><a href="#" class="icon fa-heart">28</a></li>
-      <li><a href="#" class="icon fa-comment">128</a></li>
-    </ul>
-  </footer>
 </article>
+
 {% endfor %}
 
-
-<ul class="actions pagination">
-  <li><a href="" class="disabled button big previous">Previous Page</a></li>
-  <li><a href="#" class="button big next">Next Page</a></li>
-</ul>
+<!-- Pagination -->
+<div class="pagination">
+  <!--<a href="#" class="button previous">Previous Page</a>-->
+  <div class="pages">
+    <a href="#" class="active">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <span>&hellip;</span>
+    <a href="#">20</a>
+  </div>
+  <a href="#" class="button next">Next Page</a>
+</div>

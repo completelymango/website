@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/jcecil
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://jcecil.io
+    * I am jcecil (https://keybase.io/jcecil) on keybase.
+      * I have a public key ASBcQsVjUzC3O1iDudFBJzkhu_JN2K9ZfQHsf0am8bTQOQo
+
+      To do so, I am signing this object:
+
+      {
+          "body": {
+                  "key": {
+                              "eldest_kid": "01205c42c5635330b73b5883b9d141273921bbf24dd8af597d01ec7f46a6f1b4d0390a",
+                                          "host": "keybase.io",
+                                                      "kid": "01205c42c5635330b73b5883b9d141273921bbf24dd8af597d01ec7f46a6f1b4d0390a",
+                                                                  "uid": "19e19587460c5e9f8cb3cd19cd2dae19",
+                                                                              "username": "jcecil"
+                                                                                      },
+                                                                                              "service": {
+                                                                                                          "hostname": "jcecil.io",
+                                                                                                                      "protocol": "http:"
+                                                                                                                              },
+                                                                                                                                      "type": "web_service_binding",
+                                                                                                                                              "version": 1
+                                                                                                                                                  },
+                                                                                                                                                      "client": {
+                                                                                                                                                              "name": "keybase.io go client",
+                                                                                                                                                                      "version": "1.0.18"
+                                                                                                                                                                          },
+                                                                                                                                                                              "ctime": 1488658949,
+                                                                                                                                                                                  "expire_in": 504576000,
+                                                                                                                                                                                      "merkle_root": {
+                                                                                                                                                                                              "ctime": 1488658918,
+                                                                                                                                                                                                      "hash": "3eba40c19dfed949bf1b6f06e778efdd956f9463fcbd0564da81e2ad4f9ae2f6468650d0d77717c36483db44392a40064d0693c69e9089bf05f7a0ccd61b56b8",
+                                                                                                                                                                                                              "seqno": 938837
+                                                                                                                                                                                                                  },
+                                                                                                                                                                                                                      "prev": "82adc56abfee418e8646a87df184b0b285497b4c8b69d2506a05462354b21635",
+                                                                                                                                                                                                                          "seqno": 6,
+                                                                                                                                                                                                                              "tag": "signature"
+                                                                                                                                                                                                                              }
+
+                                                                                                                                                                                                                              which yields the signature:
+
+                                                                                                                                                                                                                              hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgXELFY1MwtztYg7nRQSc5IbvyTdivWX0B7H9GpvG00DkKp3BheWxvYWTFAu57ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwNWM0MmM1NjM1MzMwYjczYjU4ODNiOWQxNDEyNzM5MjFiYmYyNGRkOGFmNTk3ZDAxZWM3ZjQ2YTZmMWI0ZDAzOTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwNWM0MmM1NjM1MzMwYjczYjU4ODNiOWQxNDEyNzM5MjFiYmYyNGRkOGFmNTk3ZDAxZWM3ZjQ2YTZmMWI0ZDAzOTBhIiwidWlkIjoiMTllMTk1ODc0NjBjNWU5ZjhjYjNjZDE5Y2QyZGFlMTkiLCJ1c2VybmFtZSI6ImpjZWNpbCJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoiamNlY2lsLmlvIiwicHJvdG9jb2wiOiJodHRwOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4xOCJ9LCJjdGltZSI6MTQ4ODY1ODk0OSwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNDg4NjU4OTE4LCJoYXNoIjoiM2ViYTQwYzE5ZGZlZDk0OWJmMWI2ZjA2ZTc3OGVmZGQ5NTZmOTQ2M2ZjYmQwNTY0ZGE4MWUyYWQ0ZjlhZTJmNjQ2ODY1MGQwZDc3NzE3YzM2NDgzZGI0NDM5MmE0MDA2NGQwNjkzYzY5ZTkwODliZjA1ZjdhMGNjZDYxYjU2YjgiLCJzZXFubyI6OTM4ODM3fSwicHJldiI6IjgyYWRjNTZhYmZlZTQxOGU4NjQ2YTg3ZGYxODRiMGIyODU0OTdiNGM4YjY5ZDI1MDZhMDU0NjIzNTRiMjE2MzUiLCJzZXFubyI6NiwidGFnIjoic2lnbmF0dXJlIn2jc2lnxECWKpV+DwWVQIVPls6bwneeqj5s4akl6V1pshXeLmCUrbNLwIIFgznSN7hr2V8nK0etxDQlZFVsjLNBH7EASlEIqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgoToSZBlUTLaSF7sWLexqz3NwhcQv+S/Avig8GyykcSKjdGFnzQICp3ZlcnNpb24B
+
+                                                                                                                                                                                                                              And finally, I am proving ownership of this host by posting or
+                                                                                                                                                                                                                              appending to this document.
+
+                                                                                                                                                                                                                              View my publicly-auditable identity here: https://keybase.io/jcecil
+
+                                                                                                                                                                                                                              ==================================================================
+
