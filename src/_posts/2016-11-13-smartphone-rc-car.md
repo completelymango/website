@@ -1,6 +1,6 @@
 ---
 subtitle: Because why not
-layout: default
+layout: post
 categories: [raspberrypi]
 splashimg: /images/traxxasBeginning.jpg
 splashalt: RC Car all put together, except for the whole raspberry pi part

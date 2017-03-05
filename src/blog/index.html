@@ -4,48 +4,37 @@ layout: default
 ---
 
 {% for post in site.posts %}
-
-<!-- Post -->
-<article class="box post post-excerpt">
-  <header>
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    <p>{{ post.subtitle }}</p>
-  </header>
-  <div class="info">
-    {% assign month = post.date | date: "%b" %}
-    <span class="date"><span class="month">{{ month }}<span>{{ post.date | date: "%B" | slice: 3, 19 }}</span></span> <span class="day">{{ post.date | date:"%d" }}</span><span class="year">{{ post.date | date:", %Y" }}</span></span>
-    <ul class="stats">
-
-      <li><a>{% capture readtime %}{{ post.content | number_of_words | plus:91 | divided_by:180.0 | append:'.' | split:'.' | first }}{% endcapture %} {% if readtime == '0' %} &lt; 1{% else %}{{ readtime }}{% endif %} min</a></li>
-
-      {% for category in post.categories %}
-      <li>
-        <a href="#">{{ category }}</a>
-      </li>
-      {% endfor %}
-
+<section id="banner">
+  <div class="content">
+    <header>
+      <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+      <p>{{ post.subtitle }}</p>
+    </header>
+    {{ post.excerpt }}
+    <ul class="actions">
+      <li><a href="{{ post.url }}" class="button big">Learn More</a></li>
     </ul>
   </div>
   {% if post.splashimg != nil %}
-  <a href="{{ post.url }}" class="image featured"><img src="{{ post.splashimg }}" alt="{{ post.splashalt }}" /></a>
+  <span class="image object">
+    <img href="{{ post.url }}" src="{{ post.splashimg }}" alt="{{ post.splashalt }}" /></a>
+  </span>
   {% endif %}
-  {{ post.excerpt }}
-</article>
-
+</section>
 {% endfor %}
 
 <!-- Pagination -->
 <!--
-<div class="pagination">
+  <div class="pagination">
   <a href="#" class="button previous">Previous Page</a>
   <div class="pages">
-    <a href="#" class="active">1</a>
-    <a href="#">2</a>
-    <a href="#">3</a>
-    <a href="#">4</a>
-    <span>&hellip;</span>
-    <a href="#">20</a>
+  <a href="#" class="active">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <span>&hellip;</span>
+  <a href="#">20</a>
   </div>
   <a href="#" class="button next">Next Page</a>
-</div>
+  </div>
 -->
