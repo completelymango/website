@@ -11,5 +11,4 @@ permalink: /blog/:month-:day-:year/:title.html
 
 highlighter: true
 
-category-list: [steambox, mediacenter, javascript, website, projects, raspi, rccar]
-tag-list: [steambox, mediacenter, javascript, website]
+category-list: [gamedev, chromecast, javascript, website, raspberrypi]
