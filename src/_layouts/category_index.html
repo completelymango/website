@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<section>
+  <header class="major">
+    <h2>Posts in category : {{ page.category }}</h2>
+  </header>
+  <div class="posts">
+    {% for p in site.categories[page.category] reversed %}
+    <article>
+      <a href="{{ p.url }}" class="image"><img src="{{ p.splashimg }}" alt="{{ p.splashalt }}" /></a>
+      <h3>{{ p.title }}</h3>
+      <p>{{ p.subtite}}</p>
+      <ul class="actions">
+        <li><a href="{{ p.url }}" class="button">More</a></li>
+      </ul>
+    </article>
+    {% endfor %}
+  </div>
+</section>

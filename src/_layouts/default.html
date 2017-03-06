@@ -150,12 +150,20 @@
             <ul>
               <li><a href="/blog">Homepage</a></li>
               <li>
-                <span class="opener">Projects</span>
+                <span class="opener">Categories</span>
                 <ul>
-                  <li><a href="#">Remote Controlled Smartphone Car</a></li>
-                  <li><a href="#">JS Multiplayer</a></li>
-                  <li><a href="#">#Beer_App</a></li>
-                  <li><a href="#">This Website</a></li>
+                  {% for cat in site.category-list %}
+                  {% capture post_count %} {{ 0 }} {% endcapture %}
+                  {% for post in site.posts %}
+                  {% for pc in post.categories %}
+                  {% if pc == cat %}
+                  {% capture post_count %} {{ post_count | plus: 1 }} {% endcapture %}
+                  {% endif %}   <!-- cat-match-p -->
+                  {% endfor %}  <!-- page-category -->
+                  {% endfor %}  <!-- page -->
+
+                  <li><a href="/categories/{{ cat }}">{{ cat }} <b>[{{ post_count }}]</b></a></li>
+                  {% endfor %}
                 </ul>
               </li>
               <li><a href="/about">About</a></li>
@@ -164,45 +172,57 @@
           </nav>
 
           <!-- Section -->
-          <!--
           <section>
             <header class="major">
-              <h2>Ante interdum</h2>
+              <h2>Current Projects</h2>
             </header>
             <div class="mini-posts">
               <article>
-                <a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-                <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                <a href="/projects/rccar" class="image"><img src="/images/traxxasBeginning.jpg" alt="" /></a>
+                <p>Controlling an old-school RC car with a smartphone</p>
               </article>
               <article>
-                <a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
-                <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                <a href="/projects/beer_tapp" class="image"><img src="/images/beer_tapp.png" alt="" /></a>
+                <p>Beer recommendation engine based on previous drinks and the available taplist</p>
               </article>
               <article>
-                <a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
-                <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                <a href="/projects/jsgame" class="image"><img src="/images/jsgame.jpg" alt="" /></a>
+                <p>Playing around with 3D rendering in javascript</p>
               </article>
+              <!--
+                <article>
+                <a href="/projects/vulkan" class="image"><img src="/images/vulkan.jpg" alt="" /></a>
+                <p>Playing around with the Vulkan SDK</p>
+                </article>
+              -->
+              <!--
+                <article>
+                <a href="/projects/ccast" class="image"><img src="/images/ccast.jpg" alt="" /></a>
+                <p>Playing around with the Chromecast SDK</p>
+                </article>
+              -->
             </div>
-            <ul class="actions">
+            <!--
+              <ul class="actions">
               <li><a href="#" class="button">More</a></li>
-            </ul>
+              </ul>
+            -->
           </section>
-          -->
 
           <!-- Section -->
           <!--
-          <section>
+            <section>
             <header class="major">
-              <h2>Get in touch</h2>
+            <h2>Get in touch</h2>
             </header>
             <p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
             <ul class="contact">
-              <li class="fa-envelope-o"><a href="#">information@untitled.tld</a></li>
-              <li class="fa-phone">(000) 000-0000</li>
-              <li class="fa-home">1234 Somewhere Road #8254<br />
-                Nashville, TN 00000-0000</li>
+            <li class="fa-envelope-o"><a href="#">information@untitled.tld</a></li>
+            <li class="fa-phone">(000) 000-0000</li>
+            <li class="fa-home">1234 Somewhere Road #8254<br />
+            Nashville, TN 00000-0000</li>
             </ul>
-          </section>
+            </section>
           -->
 
           <!-- Footer -->
@@ -220,7 +240,7 @@
     <script src="/assets/js/util.js"></script>
     <!--[if lte IE 8]><script src="/assets/js/ie/respond.min.js"></script><![endif]-->
     <script src="/assets/js/main.js"></script>
-    <script src="/assets/js/calendar.js"></script>
-    <script src="/assets/js/quotes.js"></script>
+    <!-- <script src="/assets/js/calendar.js"></script> -->
+    <!-- <script src="/assets/js/quotes.js"></script> -->
   </body>
 </html>

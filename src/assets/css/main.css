@@ -2046,7 +2046,7 @@
 
 	@media screen and (max-width: 480px) {
 
-		html, body {
+		html, body, canvas {
 			min-width: 320px;
 		}
 
@@ -2541,6 +2541,56 @@
 		.icon > .label {
 			display: none;
 		}
+
+/* Video */
+  .video {
+    border-radius: 0.375em;
+		border: 0;
+		display: inline-block;
+		position: relative;
+  }
+  
+    .video.main {
+			display: block;
+			margin: 0 0 3em 0;
+			width: 100%;
+		}
+
+		.video.left, .video.right {
+			max-width: 40%;
+		}
+
+			.video.left img, .video.right img {
+				width: 100%;
+			}
+
+		.video.left {
+			float: left;
+			padding: 0 1.5em 1em 0;
+			top: 0.25em;
+		}
+
+		.video.right {
+			float: right;
+			padding: 0 0 1em 1.5em;
+			top: 0.25em;
+		}
+
+
+/* Canvas */
+  .canvas {
+    border-radius: 0.375em;
+		border: 0;
+		display: inline-block;
+		position: relative;
+  }
+  
+    .canvas.main {
+			display: block;
+			margin: 0 0 3em 0;
+			width: 100%;
+		}
+
 
 /* Image */
 

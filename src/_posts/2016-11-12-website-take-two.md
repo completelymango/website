@@ -1,6 +1,6 @@
 ---
 subtitle: Once more, with gusto
-layout: post
+layout: single
 categories: [website]
 ---
 
