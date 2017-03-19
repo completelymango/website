@@ -1,0 +1,71 @@
+# Data Structures
+
+## LinkedList
+Dynamic data structure allowing for easy data insertion (since data isn't stored contiguously in memory), but requires linear searching for deleting or retrieving items
+
+Indexing: O(n)
+Insert/delete at beginning: O(1)
+Insert/delete at end: 0(1) (with a linkedlist that maintains a pointer to the tail)
+Insert/delete in middle: search time (O(n)) + O(1) -> O(n)
+Wasted space: O(n) (pointer required on every single item)
+
+## Trees, Tries, Graphs
+
+### Trees
+
+### Tries
+
+### Graphs
+
+## Stacks, Queues
+
+## Heaps
+
+## Vectors / Arraylists
+
+## Hash Tables
+
+# Algorithms
+
+## Breadth-First Search
+Algorithm for traversing or searching a tree or graph data strucuture. Start at node (root node in tree) and traverse neighbor nodes first.
+
+    Breadth-First-Search(Graph, root):
+    
+        create empty set S
+        create empty queue Q      
+
+        root.parent = NIL
+        add root to S
+        Q.enqueue(root)                      
+
+        while Q is not empty:
+            current = Q.dequeue()
+            if current is the goal:
+                return current
+            for each node n that is adjacent to current:
+                if n is not in S:
+                    add n to S
+                    n.parent = current
+                    Q.enqueue(n)
+
+
+## Depth-First Search
+
+## Binary Search
+
+## Merge Sort
+
+## Quick Sort
+
+# Concepts
+
+## Bit Manipulation
+
+## Memory (Stack vs. Heap)
+
+## Recursion
+
+## Dynamic Programming
+
+## Big O Time & Space
