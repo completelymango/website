@@ -14,6 +14,8 @@ Wasted space: O(n) (pointer required on every single item)
 ### Trees
 
 ### Tries
+digital tree / radix tree / prefix tree
+Position in tree defines the key with which it 
 
 ### Graphs
 
